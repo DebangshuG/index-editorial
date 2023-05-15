@@ -1,0 +1,861 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville Cursive:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+
+:root{
+   /* fonts */
+   --heading-4: Mulish;
+   --font-cabin: Cabin;
+   --font-poppins: Poppins;
+
+   /* Colors */
+   /* --main-color: #fefb24; */
+   --main-color: #fbcf23e6;
+   --white: #eeeff1;
+   --second-color: rgb(233, 255, 107);
+   --gradient: linear-gradient(#89a1fb,rgb(219, 190, 0));
+
+}
+/* Custom scroll bar */
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+section{
+    padding: 50px 100px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    padding: 15px 100px; 
+}
+
+/* Navigationbar */
+.logo img{
+    width: 70px;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-weight: 500; 
+}
+
+.navbar a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: var(--main-color);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.5s;
+}
+.navbar a:hover::after {
+  width: 100%;
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.header-btn a {
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.header-btn .sign-in {
+  background: #030618;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+.header-btn .sign-in:hover {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+/* Home Section */
+/*                 I want this part to be responsive                              */
+  .home {
+    min-height: 20vh;
+    position: relative;
+    padding-inline-end: 10%;
+    background: url(Images/Bg/Untitled\ design.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    top: 110px;
+    height: 650px;
+    text-align: start;
+    font-size: var(--font-size-45xl);
+    color: #eeeff1;
+  }
+  .text{
+    padding: 1rem 7rem 18rem 8rem;
+    position: relative;
+    width: max-content;
+  }
+  .text h1{
+    font-size: 3rem;
+    width: fit-content;
+    margin: 0.5rem 0 1rem;
+  }
+  .text p{
+    width: fit-content;
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+  }
+  .search-items-container {
+    position: relative;
+    width: 937.07px;
+    height: 83px;
+  }
+  .form-container form{
+    position: absolute;
+    display: flex;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    top: 0;
+    bottom: 4rem;
+    left: 30px;
+    padding: 20px;
+    border-radius: 90px;
+  }
+  .form-container {
+    position: absolute;
+    object-position: center;
+    flex-direction: column;
+    top: 465px;
+    left: calc(50% - 460px);
+    border-radius: 4rem;
+    background-color: white;
+    width: 935px;
+    height: 140px;
+    font-size: var(--heading-4-size);
+    color: var(--black);
+}
+
+  .input-box {
+    flex: 1 1 7rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .input-box span{
+    font-weight: 500;
+    position: relative;
+    color: #000;
+    opacity: 0.8;
+  }
+  .input-box input{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: var(--white);
+    border-radius: 0.5rem;
+    font-size: 20px;
+  }
+  .form-container form .btn{
+    flex: 1 1 7rem;
+    padding: 12px 30px;
+    border-color: white;
+    background: black;
+    color:white;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .form-container form .btn:hover{
+    background: var(--main-color);
+    color:black;
+  }
+  .date {
+    position: absolute;
+    top: calc(50% - 14px);
+    width: 1rem;
+    left: 16px;
+    line-height: 175.7%;
+    font-weight: 600;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+/*                              Till this part                                         */
+
+
+/* Ride */
+.heading {
+  padding-top: 70px;
+  height: 160px;
+  /* line-height: 40px; */
+  text-align: center;
+}
+.heading span{
+  font-weight: 500;
+  line-height: 10px;
+  /* text-transform: uppercase; */
+}
+.heading h1{
+  font-size: 33px;
+}
+.heading p {
+  font-weight: 500;
+  line-height: 23px;
+}
+.ride-container{
+  display: grid;
+  align-items: center;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+  gap: 1rem;
+  margin-top: 0rem;
+}
+.ride-container .box{
+  text-align: center;
+  padding: 40px;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+.ride-container .box .bx{
+  font-size: 65px;
+  padding: 10px;
+  background: white;
+  border-radius: 0.5rem;
+  color: var(--main-color);
+}
+.ride-container .box h2{
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 1.4rem 0 0.5rem;
+}
+.ride-container .box .bx:hover,
+.ride-container .box .bx .bxs-car {
+  background: var(--main-color);
+  color: white;
+}
+
+/* why choose us */
+
+.wcu-container{
+  display: grid;
+  min-width: 100%;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+.wcu-container .box{
+  text-align: center;
+  width: 20rem;
+  padding: 15px;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+.wcu-container .box .bx{
+  font-size: 65px;
+  padding: 10px;
+  background: white;
+  border-radius: 0.5rem;
+  color: var(--main-color);
+}
+.wcu-container .box p{
+  margin-top: 1.6rem;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 16rem;
+}
+
+.wcu-container .box h2{
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 1.4rem 0 0.5rem;
+}
+.wcu-container .box .bx:hover,
+.wcu-container .box .bx .bxs-car {
+  background: var(--main-color);
+  color: white;
+}
+
+/* Services */
+section .services{
+  top: 100px;
+}
+.services-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.services-container .box{
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+.services-container .box .box-img{
+  width: 100%;
+  height: 200px;
+}
+.services-container .box .box-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  object-position: center;
+}
+.services-container .box p{
+  padding: 0 8px;
+  border: 1px solid var(--text-color);
+  width: 80px;
+  border-radius: 0.5rem;
+  margin: 1rem 0 1rem;
+}
+.services-container .box h3 {
+  font-weight: 500;
+}
+.services-container .box h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: purple;
+  margin: 0.2rem 0 0.5rem;
+}
+.services-container .box h2 span{
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.services-container .box .btn {
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+
+.services-container .box .btn:hover{
+  background: var(--main-color);
+  color: var(--black);
+}
+/* Swiper */
+.wrapper{
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.wrapper .car1 {
+  white-space: nowrap;
+}
+.car1 img {
+  height: 340px;
+  object-fit: cover;
+  width: calc(100% / 3);
+}
+
+/* About Us page */
+.about-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 2rem ;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+/* Reviews */
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.rev-img{
+  width: 70px;
+  height: 70px;
+}
+.rev-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid var(--second-color);
+}
+.reviews-container .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.reviews-container .box h2{
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.5rem;
+}
+.reviews-container .box p{
+  font-style: normal;
+}
+.reviews-container .box .stars .bx {
+  color: rgb(227, 227, 14);
+}
+.rev-btn-container .btn{
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  background: var(--main-color);
+  border-color: var(--main-color);
+  color: black;
+  padding: 12px 30px;
+  border-radius: 0.5rem;
+}
+
+/* About Us page main */
+.welcome {
+  padding: 50px 100px;
+}
+.welcome-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(322px,auto));
+  gap: 2rem;
+  padding: 45px;
+  overflow: hidden;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.welcome-container h3 {
+  justify-content: left;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.welcome-content {
+  padding: 1rem;
+}
+.director-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 4rem;
+  padding: 10rem 1.2rem;
+}
+.welcome-container .director-container img {
+  height: 520px;
+  width: 465px;
+}
+
+.director-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+  width: 100%;
+  gap: 2rem;
+}
+.point-container {
+  font-size: 1rem;
+  width: 13rem;
+  height: 30px;
+}
+.point-container span {
+  position: relative;
+  top: -0.6rem;
+}
+.director-container .point-container img{
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.director-card {
+  display: flex;
+  width: 30rem;
+}
+.director-card .dir-nameplate {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.director-card .dir-signature span{
+  font-size: 2.5rem;
+  font-family: Cedarville Cursive;
+}
+.director-card .mid-line span {
+  position: relative;
+  width: min-content;
+  opacity: 0.3;
+  font-size: 56px;
+  font-weight: 100;
+}
+.dir-contact {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  gap: 1rem;
+}
+.more-about-us {
+  padding: 2rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  background-color: #fbcf23e6;
+}
+.call-container {
+  margin: 1rem;
+}
+.call-container .phone-no h4{
+  font-size: 1.35rem;
+  font-style: normal;
+  color: #000;
+  font-weight: 700;
+}
+
+
+/* Our vision */
+.vision-bg-mask {
+  background-color: #fbcf23e6;
+  padding: 60px;
+  overflow: hidden;
+  font-size: 1.1rem;
+  color: #000;
+}
+.vision-container h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1c2752;
+}
+
+.about-us-banner {
+  padding: 50px 0;
+}
+
+.banner-container {
+  background: #515005;
+}
+.banner-container img {
+  object-fit: cover;
+  width: 100%;
+  opacity: 0.3;
+  height: 20rem;
+}
+.banner-container h3 {
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  color: #ffff;
+  font-size: 4rem;
+}
+/* Team Cards */
+.team h1{
+  font-size: 3rem;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(322px,auto));
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.team-img{
+  width: 202px;
+  height: 257px;
+}
+.team-img img{
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  object-position: center;
+  /* border: 2px solid var(--second-color); */
+}
+.team-container .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.team-container .box h2{
+  font-size: 1.52rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.5rem;
+}
+.team-container .box p{
+  font-size: 1rem;
+  font-style: normal;
+}
+.team-container .box .stars .bx {
+  color: rgb(227, 227, 14);
+}
+
+
+  /* Footer */
+  .group-wrapper {
+    position: relative;
+    background-color: rgba(250, 209, 37, 0.9);
+    width: 1332px;
+    height: 1285px;
+    flex-shrink: 0;
+    overflow: hidden;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: var(--main-color);
+    padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: var(--text-color);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--text-color);
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: black;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0 0 0 / 85%);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+.creator-container {
+  display: flex;
+  opacity: 0.6;
+  margin-top: 3rem;
+  gap: 12rem;
+  line-height: 2rem;
+}
+.creator-container .copyright {
+  margin-inline-start: 1rem;
+}
+.creator-container .powered-by {
+  margin-inline-start: 1rem;
+}
+  
+
+  /* Making responsive */
+  @media (max-width: 991px) {
+    header{
+      padding: 18px 40px;
+    }
+    section {
+      padding: 50px 40px;
+    }
+  } 
+  @media (max-width: 881px) {
+    home{
+      background-position: center top;
+    }
+    .form-container form{
+      bottom: 0.2rem;
+    } 
+    .form-container {
+      bottom: 0.2rem;
+      left: 0;
+    }
+  } 
+  @media (max-width: 768px){
+    header{
+      padding: 11px 40px;
+    }
+    #menu-icon {
+      display: initial;
+    }
+    .sign-up{
+      display: none;
+    }
+    .quote1 {
+      font-size: 2.5rem;
+      line-height: 2rem;
+    }
+    .text{
+      height: 20vh;
+      line-height: 2.5rem;
+    }
+    .home {
+      grid-template-columns: 1fr;
+    }
+    .form-container form {
+      position: unset;
+    }
+    
+    header .navbar {
+      position: absolute;
+      top: -580px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);    
+      transition: 0.2 ease;
+      text-align: left;
+    }
+    .navbar.active{
+      top: 100%;
+    }
+    .navbar a {
+      padding: 1rem;
+      border-left: 2px solid var(--main-color);
+      margin: 1rem;
+      display: block;
+    }
+    .navbar a:hover{
+      color: black;
+      background: var(--main-color);
+      border: none;
+    }
+    .navbar a::after{
+      display: none;
+    }
+    .heading {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .heading h1 {
+      font-size: 1.3rem;
+    }
+  }
+
+  /* Footer Responsive */
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+  /* About us page */
+  @media(max-width: 767px){
+    .banner-container img{
+      height: 3rem;
+    }
+    .banner-container h3 {
+      font-size: 3rem;
+    }
+  }
+  @media(max-width: 574px){
+    .banner-container{
+      width: 100%;
+  }
+
+  /* creator responsive */
+  }
+  @media(max-width: 767px){
+    .creator-container{
+      width: auto;
+      gap: 7rem;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .creator-container{
+      width: 80%;
+      margin-left: 30px;
+      gap: 0rem;
+      font-size: 14px;
+  }
+} 

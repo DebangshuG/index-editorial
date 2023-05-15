@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Website </title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- link to php -->
+    <link rel="stylesheet" href="php/mail.php">
+
+    <!-- Link to swiper's css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <!-- Custom Fonts -->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap"
+  />
+
+   <!-- Figma links -->
+   <link
+   rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap"
+ />
+ <link
+   rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap"
+ />
+ <link
+   rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700&display=swap"
+ />
+ <link
+   rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+ />
+ <link
+   rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Cedarville Cursive:wght@400&display=swap"
+ />
+ <link
+   rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+ />
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="" class="logo"><img src="Images/logo.png" alt="logo"></a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar" id="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="./Services.html">Services</a></li>
+      <li><a href="./aboutUs.html">About Us</a></li>
+      <li><a href="https://wa.me/916000301156">Contact</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <div class="header-btn">
+      <a href="./send-email.php" name="sign-up" class="sign-up">Sign Up</a>
+      <a href="#" name="sign-in" class="sign-in">Sign In</a>
+    </div>
+
+  </header>
+  <!-- Hero Section -->
+      <section class="home" id="home">
+        <div class="text">
+          <h1><span>Renting vehicles have</span> <br> never been this easy</h1>
+          <p>
+            Get ready to hit the road with just a click! <br> Rent your dream vehicle
+            online today .
+          </p>
+        </div>
+
+        <div class="form-container">
+          <form action="mail.php" method="post" autocomplete="off">  
+            
+            <div class="input-box">
+              <span>Destination</span>
+              <input type="search" name="destination" placeholder="Search Places">
+            </div>
+            
+            <div class="input-box">
+              <span>Pick-up Date</span>
+              <input type="date" name="pickup_date">
+            </div> 
+            
+            <div class="input-box">
+              <span>Return Date</span>
+              <input type="date" name="return_date">
+            </div> 
+            <input type="submit" name="submit" value="Submit" class="btn">
+          </form>
+        </div>
+      </section>
+
+      
+      <!-- Featured cars -->
+      <section class="services" id="sevices">
+         <div class="heading">
+            <h1>Featured Cars</h1>
+            <p>Explore Out Top Deals</p>
+            <p>From Top Rated Dealers</p>
+         </div>
+         <div class="services-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="Images/Cars/Mahindra Thar.jpg" alt="Car1">
+                </div>
+                <p>Manual</p>
+                <h3>Mahindra Thar</h3>
+                <h2>₹4,500.00 <span>/day</span></h2>
+                  <a href="#" class="btn">Book Now</a>
+            </div>
+
+            <div class="box">
+              <div class="box-img">
+                  <img src="Images/Cars/ToyotaInnovaCrysta.png" alt="Car3">
+              </div>
+              <p>Manual</p>
+              <h3>Toyota Innova Crysta</h3>
+              <h2>₹4,500.00 <span>/day</span></h2>
+                <a href="#" class="btn">Book Now</a>
+              </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="Images/Cars/HondaAmaze.jpg" alt="Car2">
+                </div>
+                <p>Manual</p>
+                <h3>Honda Amaze Bs6</h3>
+                <h2>₹3,500.00 <span>/day</span></h2>
+                  <a href="#" class="btn">Book Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="Images/Cars/TataNexon.jpg" alt="Car4">
+                </div>
+                <p>Manual</p>
+                <h3>Tata Nexon</h3>
+                <h2>₹3,500.00 <span>/day</span></h2>
+                  <a href="#" class="btn">Book Now</a>
+            </div>
+         </div>
+      </section>
+      
+      <!-- How it works -->
+      <div class="heading">
+        <h1>How it works</h1>
+        <span>Drive your dream car, bike & scooty with 3 easy steps</span>
+      </div>
+
+      <section class="ride" id="ride">
+          <div class="ride-container">
+             <div class="box">
+                <i class="bx bxs-map"></i>
+                <h2>Choose A Location</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt odio necessitatibus, distinctio quam eligendi eum.</p>
+             </div>
+
+             <div class="box">
+                <i class="bx bxs-calendar-check"></i>
+                <h2>Pick-Up Date</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt odio necessitatibus, distinctio quam eligendi eum.</p>
+             </div>
+
+             <div class="box">
+              <i class='bx bxs-car' ></i>
+                <h2>Book A Vehicle</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt odio necessitatibus, distinctio quam eligendi eum.</p>
+             </div>
+          </div>
+      </section>
+      
+      <!-- Why choose us -->
+      <div class="heading">
+        <h1>Why Choose Us ?</h1>
+        <span>Choose us for self-drive car rentals and experience the perfect combination of convenience, affordability, and quality service.</span>
+      </div>
+      
+      <section class="why-choose-us" id="wcu">
+        <div class="wcu-container">
+           <div class="box">
+            <i class='bx bxs-car' ></i>
+              <h2>Multiple Brands</h2>
+              <p>Having multiple brands available for self-drive with a range of options to choose from, ensuring that they can select the perfect car to suit their needs and preferences. This advantage also allows customers to experience different brands and models, making their travel experience more enjoyable and fulfilling.</p>
+           </div>
+           
+           <div class="box">
+              <i class='bx bxs-gas-pump'></i>
+              <h2>Full Tank Fuel</h2>
+              <p>Full tank fuel provide customers with the convenience of starting their journey without having to search for a fuel station. This advantage saves time, effort, and money and ensures a smooth and hassle-free driving experience throughout the rental period.</p>
+           </div>
+
+           <div class="box">
+              <i class='bx bx-tachometer' ></i>
+              <h2>Unlimited Kms</h2>
+              <p>With unlimited kilometers customers have the freedom to travel to any distance without worrying about exceeding a certain limit or incurring extra charges. This advantage provides peace of mind and flexibility, making it easier for customers to plan and enjoy their trip without any restrictions.</p>
+           </div>
+
+           <div class="box">
+              <i class='bx bxs-wallet' ></i>
+              <h2>No Security Deposit</h2>
+              <p>Full tank fuel provide customers with the convenience of starting their journey without having to search for a fuel station. This advantage saves time, effort, and money and ensures a smooth and hassle-free driving experience throughout the rental period.</p>
+           </div>
+        </div>
+      </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+        <div class="heading">
+          <h1>What do people say about us ?</h1>
+          <span>Customer reviews are very important to us</span>
+        </div>
+          <div class="reviews-container">
+             
+            <div class="box">
+              <div class="rev-img">
+                  <img src="Images/People/rev4.png" alt="">
+              </div>
+              <h2>Sai Amruth</h2>
+              <div class="stars">
+                  <i class='bx bxs-star'></i>  
+                  <i class='bx bxs-star'></i>  
+                  <i class='bx bxs-star'></i>  
+                  <i class='bx bxs-star'></i>  
+                  <i class='bx bxs-star'></i>  
+              </div>
+              <p>I took both Car & Dio scooter, both were maintained @ good condition, fuel was full & owner of the company is master piece gentleman...most reliable & friendly service. I wish all the best for this organisation</p>
+          </div>
+
+              <div class="box">
+                  <div class="rev-img">
+                      <img src="Images/People/rev1.png" alt="">
+                  </div>
+                  <h2>Nomi Sarmah</h2>
+                  <div class="stars">
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                  </div>
+                  <p>Very Professional. Punctual and understanding. I have made two trips with them and I highly recommend this service. The owner definitely owns his job and makes sure that the passengers are at ease.</p>
+              </div>
+              
+              <div class="box">
+                  <div class="rev-img">
+                      <img src="Images/People/rev2.png" alt="">
+                  </div>
+                  <h2>Samrat Rashaily</h2>
+                  <div class="stars">
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                  </div>
+                  <p>Very good service..I rented a Royal Enfield Himalayan for 3 days and it was in good condition.. Though it was bihu festival they delivered the bike on time as said..I had a hassle free trip and all I can say is I will be renting bikes from them again in future</p>
+                </div>
+                
+                
+
+              <div class="box">
+                  <div class="rev-img">
+                      <img src="Images/People/rev3.png" alt="">
+                  </div>
+                  <h2>Neelesh Kumar</h2>
+                  <div class="stars">
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                      <i class='bx bxs-star'></i>  
+                  </div>
+                  <p>Really you Car rental service is awesome and affordable. All available cars are in good condition. Most important availability of car is greater and you are attending our calls all the times. Thank you so much for your service.👍</p>
+              </div>
+
+            </div>
+
+            <div class="rev-btn-container">
+              <a  href="https://www.google.com/maps/place/All+Ride+Rental+%7C+Self+Drive+Cars+%7C+Motorcycles+%7C+Scooters+%7C+Rental+Service+%7CJorhat+%7C+Assam/@26.7538991,94.1888569,17z/data=!4m18!1m9!3m8!1s0x3746c30dc571f85b:0x9df57e4a5cb17236!2sAll+Ride+Rental+%7C+Self+Drive+Cars+%7C+Motorcycles+%7C+Scooters+%7C+Rental+Service+%7CJorhat+%7C+Assam!8m2!3d26.7538991!4d94.1914318!9m1!1b1!16s%2Fg%2F11f76z2gmj!3m7!1s0x3746c30dc571f85b:0x9df57e4a5cb17236!8m2!3d26.7538991!4d94.1914318!9m1!1b1!16s%2Fg%2F11f76z2gmj" class="btn">See more</a>
+            </div>
+    </section>
+    
+    <!-- newsletter -->
+    <!-- <section class="newsletter">
+        <h2>Subscribe to our NewsLetter</h2>
+        <div class="box">
+            <input type="text" placeholder="Enter your Email...">
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </section> -->
+    
+    <!-- map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d28502.822920872324!2d94.198217!3d26.749071!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x3746c30dc571f85b%3A0x9df57e4a5cb17236!2sAll%20Ride%20Rental%20%7C%20Self%20Drive%20Cars%20%7C%20Motorcycles%20%7C%20Scooters%20%7C%20Rental%20Service%20%7CJorhat%20%7C%20Assam%2C%20Assam%20Trunk%20Rd%2C%20Seuj%20Nagar%2C%20Sonari%20Gaon%2C%20Tarajan%2C%20Jorhat%2C%20Assam%20785001!3m2!1d26.753899099999998!2d94.19143179999999!5e0!3m2!1sen!2sin!4v1683322247120!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <br>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="./Imp.doc/ALL RIDE RENTAL CAR RENTAL AGREEMENT.pdf" download="Rental agreement">Agreement Form</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Features</h4>
+            <ul>
+              <li><a href="#">Vehicle Tracker</a></li>
+              <li><a href="#">Business Trips</a></li>
+              <li><a href="#">Locations</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><a href="mailto:allriderental@gmail.com">allriderental@gmail.com</a></li>
+              <li><a href="tel:8011576414">6000301156</a></li>
+              <li><a href="#">Assam Trunk Rd, Seuj Nagar, Sonari Gaon, Tarajan, Jorhat, Assam 785001</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/ALLREIDERENTAL/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/polash1810"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/allriderental/"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class='bx bxl-whatsapp'></i></i></a>
+            </div>
+            <br>
+          </div>
+          <div class="creator-container">
+            <div class="copyright">
+              All rights reserved by : allriderental @ company
+            </div>
+
+            <div class="powered-by">
+              Powered by : D & A
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+      
+      <!-- link to JS -->
+      <script src="main.js"></script>
+</body>
+</html>
