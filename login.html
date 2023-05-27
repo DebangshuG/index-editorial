@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Login & Signup Form</title>
+   <link rel="icon" type="image/x-icon" href="Images/logo.png">
+    
+   <!-- Link to Stylesheet -->
+   <link rel="stylesheet" href="css/login.css">
+   
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Signup</header>
+        <form action="Forms/#" method="post">
+          <input type="text" name="user_name" id="name" placeholder="Full name" value="" required />
+          <input type="email" name="email" id="emailAddress" placeholder="Email address" required />
+          <input type="password" name="password" id="signupPw" placeholder="Password" value="" required/>
+          <input type="number" name="phone_no" id="phone_no" placeholder="Phone Number" value="" required/>
+          <!-- <input type="text" name="address" id="userAdress" placeholder="State, district, locality, pincode" required/> -->
+          <div class="checkbox">
+            <input type="checkbox" onclick="show_signPassword()">
+            <label for="signupCheck" >Show password</label>
+            <input type="checkbox" id="signupCheck" required/>
+            <label for="signupCheck">I accept all terms & conditions</label>
+          </div>
+          <input type="submit" value="signup" name="" />
+        </form>
+      </div>
+
+      <div class="form login" method="post">
+        <header>Login</header>
+        <form action="Forms/#" method="post">
+          <input type="email" name="email" id="email" placeholder="Email address" value="" required />
+          <input type="password" name="loginPw" id="loginPw" placeholder="Password" value="" required/>
+          <div class="checkbox-login">
+            <input type="checkbox" onclick="show_logPassword()">
+            <label for="signupCheck" >Show password</label>
+          </div>
+          <a href="forgotPassword.html">Forgot password?</a>
+          <input type="submit" value="Login" name=""/>
+        </form>
+      </div>
+
+
+      <!-- link to JS -->
+      <script src="js/login.js"></script>
+
+    </section>
+  </body>
+</html>
